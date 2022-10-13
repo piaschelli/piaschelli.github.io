@@ -1,0 +1,216 @@
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER*/
+.head_ICare{
+  height: 50vh;
+  background-image: url('https://images.pexels.com/photos/1710792/pexels-photo-1710792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1000&w=3000');
+}
+
+
+/* LOGO*/
+.navbar_a {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.logo{
+  display: flex;
+  padding-left: 30px;;
+  padding-top: 30px;
+}
+
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+header > div > div {
+  display: block;
+  margin: 10px;
+  flex: 1 1 0;
+  width: 0;
+}
+
+header > div > div#description {
+  background-color: white;
+}
+
+
+.about{
+  display: flex;
+}
+
+/* das aligned den Inhalt der divs, also wie der Text angeordnet ist etc */
+.about-pages > div > div, .about-title > div > div {
+  height: 100vh !important;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/* ICONS */
+
+.Icons_Main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px
+}
+
+.Icons {
+  display: block;
+  margin: 10px;
+  flex: 1 1 1;
+  width: 10;
+
+}
+
+
+/* TEXT */
+
+.intro_text{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 250px
+}
+
+section > div > h1#start{
+  font-size: 35px;
+}
+
+/* ??????? */
+.Liste_nav {
+  list-style: none;
+  font-size: 10px;
+  margin-top: 50px;
+  line-height: 10px;
+}
+
+section > div > h2#DasBinIch{
+  font-size: 35px;
+}
+
+.info_container {
+
+  display: flex;
+  align-items: center;
+  width:100%;
+  gap:3vw
+
+}
+
+/* Images_projects */
+
+.Blocks {
+  display: flex;
+  flex-direction:column;
+
+  align-items: center;
+  width: 100%;
+}
+
+.project-image{
+  margin: 10px;
+}
+
+/* LINKE SPALTE */
+.about-title{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TEXT LINKE SPALTE */
+.about-title div p{
+  width: 90%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/*BLOCK 1 LINKE SPALTE */
+.about-title div:nth-child(1) {
+  height: 200vh;
+}
+
+.about-title div:nth-child(1) div {
+  background-color: white;
+}
+
+/*BLOCK 2 LINKE SPALTE */
+.about-title div:nth-child(2) {
+  height: 100vh;
+}
+
+.about-title div:nth-child(2) div {
+  background-color: gray;
+}
+
+/*RECHTE SPALTE*/
+.about-pages {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TEXT RECHTE SPALTE */
+.about-pages div p{
+  width: 90%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/*BLOCK 1 RECHTE SPALTE */
+.about-pages div:nth-child(1) {
+  height: 100vh;
+}
+
+.about-pages div:nth-child(1) div {
+  background-color: rgb(255, 160, 0);
+}
+
+/*BLOCK 2 RECHTE SPALTE */
+.about-pages div:nth-child(2) {
+  height: 200vh;
+}
+
+.about-pages div:nth-child(2) div {
+  background-color: rgb(50, 160, 0);
+}
+
+/*BLOCK 3 RECHTE SPALTE */
+.about-pages div:nth-child(3) {
+  height: 300vh;
+}
+
+.about-pages div:nth-child(3) div {
+  background-color: rgb(50, 20, 70);
+}
+
+/*STICKYMAKER FÜR BEIDE SPALTEN */
+/*
+Notiz: Sowohl Text ist sticky als auch Untergrund
+Wäre Untergrund nicht Sticky, dann gäbe es kein Überlagern
+Wäre Text nicht sticky, wäre irgendwie alles broken
+*/
+ .about-pages > div > div, .about-pages > div, .about-title > div > div, .about-title > div {
+  position: sticky;
+  top: 0%;
+  width: 100%;
+}
+
+
+.about-pages div:nth-child(3) p{
+  color: #FFFF;
+}
+.about-pages div:nth-child(3) h2{
+  color: #FFFF;
+}
